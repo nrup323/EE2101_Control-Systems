@@ -1,0 +1,70 @@
+\documentclass[8pt]{article}
+\usepackage{times}
+\usepackage{mathptmx}
+\usepackage{amsmath}
+
+\begin{document}
+\title{EE2101 Assignment \\
+ms18btech11015}
+\maketitle
+\section{Question}
+HIV inflicts its damage by infecting healthy CD4 + T cells that are necessary to fight infection.As the virus embeds in a T cell and the immune systems produces more of these cells and the immune system produces more of these cells to fight the infection. The virus propagates in an opportunistic fashion. As we now developed a simple HIV model.
+Normally T cells are produced at a rate $s$ and die at rate $d$ .
+The HIV virus is resent in the bloodstream in the infected individual.These viruses in the bloodstream,called free viruses, infect healthy T cells at a rate $\beta$. Also, the viruses reproduce through the T cell multiplication process or otherwise at a rate $k$.Free viruses die at a rate $c$.
+Infected T cells die at a rate $\nu$.
+Mathematically it can be written as : 
+\\
+\\
+\dfrac{dT}{dt} = $s$ - $d$T - $\beta$T$\nu$ \hspace{1cm}  \dfrac{dT^*}{dt} =  $\beta$T$\nu$ - $\mu$T^* \hspace{1cm} \dfrac{dv}{dt} =$\kappa$T^* - c$\nu$
+\\`\\
+where, \\
+T is no. of healthy cells     \\
+No. of infected cells is T^*  \\
+$\nu$ = no. of free viruses\\
+\\
+Question 1 : Which of the equations are non linear ? \\
+Question 2 : Find the equilibrium points of the system.\\
+\\
+}
+\section*{Answer}
+\newline
+linearity depends on mainly 2 things: 
+\newline
+1) Superposition (f(a+b) = f(a) + f(b)) \newline
+2) Homogeneity  f(ax) = a*f(x)
+\newline
+In above system of equations , variables are T, T^* and  $\nu$. \\
+Therefore as we can see in the first two equations term T$\nu$  exists which makes those two  equation non linear.\\
+So first two equations are not linear equations ,third equation is linear.
+\newline
+At the equilibrium T ,T^* ,$\nu$  remain constant. Therefore we can write \\
+\newline
+\dfrac{dT}{dt} = 0  \hspace{1cm} \dfrac{dT^*}{dt} = 0   \hspace{1cm}     \dfrac{dv}{dt} = 0
+\newline \newline
+ $s$ - dT - $\beta$T$\nu$ =  0 \hspace{1cm} $\beta$T$\nu$ - $\mu$T^* = 0 \hspace{1cm} $\kappa$T^* - c$\nu$ = 0 
+
+1)  First equilibrium can be easily shown by substituting values in the given equation and checking if they satisfy.
+\newline
+2)  For second equilibrium:
+\\
+From $eq^n$ \hspace{.15cm} 3) \hspace{1cm} $T^*$ = \dfrac{cv}{k}
+\\substituting this in  $eq^n$ 2)  we get \hspace{.25cm} T = \dfrac{c\mu}{k\beta}
+\newline
+substituting in eq^n 1) we get \hspace{0.25cm}  \nu = \dfrac{ks}{c\mu} - \dfrac{d}{\beta}
+\newline
+T^* = \dfrac{s}{\mu} - \dfrac{cd}{k\beta}
+\newline \\
+Finally,
+\newline
+T = \dfrac{c\mu}{k\beta} \hspace{1cm}   \nu = \dfrac{ks}{c\mu} - \dfrac{d}{\beta} \hspace{1cm}  T^* = \dfrac{s}{\mu} - \dfrac{cd}{k\beta}
+
+
+\end{document}
+
+
+
+
+
+
+
+
